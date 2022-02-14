@@ -556,7 +556,7 @@ img {
 .service__body {
     margin-top: 24px;
     @include mq('sm'){
-        margin-top: 14px;
+        margin-top: 25px;
     }
 }
 .service__body-title {
@@ -569,7 +569,7 @@ img {
     font-size: 1.5rem;
     line-height: 1.8;
     @include mq('sm'){
-        margin-top: 10px;
+        margin-top: 20px;
     }
 }
 
@@ -611,8 +611,8 @@ img {
 }
 .works__contents-detail {
     margin-top: 30px;
-    font-size: 1.5rem;
-    line-height: 1.8;
+    font-size: 1.6rem;
+    line-height: 1.5;
 }
 .bg-gray {
     position: absolute;
@@ -785,6 +785,7 @@ img {
 .contact-text  {
     margin-top: 35px;
     text-align: center;
+    line-height: 1.6;
 }
 .contact__lead {
     margin-top: 70px;
@@ -795,9 +796,6 @@ img {
     margin-bottom: 70px;
     background-color: #F7F7F7;
     padding: 90px;
-}
-.contact-text  {
-
 }
 
 /*==================================================================
@@ -1273,6 +1271,9 @@ img {
 }
 .works__works__item {
     transition: all .3s;
+    a {
+        color: $color-text-base;
+    }
     
     &:hover {
         transition: all .3s;
