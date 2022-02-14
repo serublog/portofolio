@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="description">
+  <title>Seru Portofolio</title>
+  <!-- fontawesome	 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+  <!-- icon -->
+  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <!-- reset css	 -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- 	google font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Sans+Pro:wght@400;700&display=swap"
+    rel="stylesheet">
+  <!--  slick	 -->
+  <link href="./slick/slick-theme.css" rel="stylesheet" type="text/css">
+  <link href="./slick/slick.css" rel="stylesheet" type="text/css">
+  <!-- original css	 -->
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__inner inner">
+      <div class="site-title"><a href="./"><img src="./img/logo.svg" alt=""></a></div>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="./service.html" class="header__item__link">サービス</a></li>
+          <li class="header__item"><a href="./works.html" class="header__item__link">制作実績</a></li>
+          <li class="header__item"><a href="./company.html" class="header__item__link">私について</a></li>
+          <!-- <li class="header__item"><a href="./recruit.html" class="header__item__link">RECRUIT</a></li> -->
+          <li class="header__item"><a href="./contact.html" class="header__item__link">お問い合わせ・ご相談</a></li>
+        </ul>
+      </nav>
+      <div class="burger-btn">
+        <span class="bar bar__top"></span>
+        <span class="bar bar__mid"></span>
+        <span class="bar bar__bottom"></span>
+      </div>
+    </div>
+    <div class="mask"></div>
+  </header>
+  <!-- /.header -->
+
+  <main class="main">
+    <div class="mainvisual">
+      <div class="main__contents">
+        <h1 class="main-copy">CONTACT</h1>
+        <p class="sub-copy">お問い合わせ</p>
+      </div>
+    </div>
+    <!-- /.mainvisual -->
+
+    <div class="pankuzu">
+      <div class="pankuzu__inner inner">
+        <div class="pankuzu__item"><a href="./">HOME</a></div>
+        <div class="pankuzu__item"><a href="./service.html">CONTACT</a></div>
+      </div>
+    </div>
+
+    <section class="contact__contact">
+      <div class="contact__contact__inner inner">
+        <p class="contact__contact__lead">Webサイトの制作のご依頼やお見積りなど、<br class="hidden-md"> お気軽にご相談ください。</p>
+        <div class="contact__contact__wrapper">
+          <form id="js-form" action="" class="contact__contact__form" method="post">
+            <dl class="contact__contact__list">
+              <div class="contact__contact__item">
+                <dt class="contact__contact__item-title">
+                  お問い合わせ種別<span class="contact__contact__item-title-inline">*必須</span>
+                </dt>
+                <dd class="contact__contact__item-input">
+                  <div class="contact__contact__radio-wrap">
+                    <label class="contact__contact__radio">
+                      <input type="radio" name="radio" class="contact__contact__radio-input" value="お仕事のご依頼・ご相談" required checked>
+                      <span class="contact__contact__radio-part">お仕事のご依頼・ご相談</span>
+                    </label>
+                    <label class="contact__contact__radio">
+                      <input type="radio" name="radio" class="contact__contact__radio-input" value="お見積りのご依頼" required>
+                      <span class="contact__contact__radio-part">お見積りのご依頼</span>
+                    </label>
+                    <label class="contact__contact__radio">
+                      <input type="radio" name="radio" class="contact__contact__radio-input" value="その他" required>
+                      <span class="contact__contact__radio-part">その他</span>
+                    </label>
+                  </div>
+                </dd>
+              </div>
+              <div class="contact__contact__item">
+                <dt class="contact__contact__item-title">
+                  お名前<span class="contact__contact__item-title-inline">*必須</span>
+                </dt>
+                <dd class="contact__contact__item-input">
+                  <input type="text" name="" required>
+                </dd>
+              </div>
+              <div class="contact__contact__item">
+                <dt class="contact__contact__item-title">会社名</dt>
+                <dd class="contact__contact__item-input">
+                  <input type="text" name="" required>
+                </dd>
+              </div>
+              <div class="contact__contact__item">
+                <dt class="contact__contact__item-title">
+                  メールアドレス<span class="contact__contact__item-title-inline">*必須</span>
+                </dt>
+                <dd class="contact__contact__item-input">
+                  <input type="email" name="" required>
+                </dd>
+              </div>
+              <div class="contact__contact__item">
+                <dt class="contact__contact__item-title">
+                  お電話番号
+                </dt>
+                <dd class="contact__contact__item-input">
+                  <input type="tel" name="" required>
+                </dd>
+              </div>
+              <div class="contact__contact__item">
+                <dt class="contact__contact__item-title">
+                  お問い合わせ内容<span class="contact__contact__item-title-inline">*必須</span>
+                </dt>
+                <dd class="contact__contact__item-input">
+                  <textarea name="" required></textarea>
+                </dd>
+              </div>
+            </dl>
+          </form>
+          <div class="util-btn btn"><a href="#!">送信する</a></div>
+        </div>
+      </div>
+    </section>
+    <!-- /.contact -->
+
+    <a class="totop"><i class="fas fa-arrow-up"></i></a>
+  </main>
+  <!-- /.main -->
+
+  <footer class="footer">
+    <div class="footer__inner inner">
+      <nav class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item"><a href="./service.html" class="footer__item__link">サービス</a></li>
+          <li class="footer__item"><a href="./works.html" class="footer__item__link">制作実績</a></li>
+          <li class="footer__item"><a href="./company.html" class="footer__item__link">私について</a></li>
+          <!-- <li class="footer__item"><a href="./recruit.html" class="footer__item__link">RECRUIT</a></li> -->
+          <li class="footer__item"><a href="./contact.html" class="footer__item__link">お問い合わせ・ご相談</a></li>
+        </ul>
+      </nav>
+      <p class="copyright">&copy; PON DESIGN</p>
+    </div>
+  </footer>
+  <!-- /.footer -->
+
+  <!-- jquery cdn google -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- slick -->
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3/dist/jquery.min.js"></script>
+  <script src="./slick/slick.min.js"></script>
+  <!-- original js -->
+  <script src="./js/script.js"></script>
+</body>
+
+</html>
