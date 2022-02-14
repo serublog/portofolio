@@ -1949,10 +1949,10 @@ textarea {
 input[type="text"],
 input[type="email"],
 select {
-  width: 300px;
+  max-width: 300px;
 }
 
 input[type="tel"] {
-  width: 200px;
+  max-width: 200px;
 }
 /*# sourceMappingURL=style.css.map */
