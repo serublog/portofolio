@@ -66,8 +66,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lora', 'Yu Mincho', sans-serif;
   font-size: 1.5rem;
   letter-spacing: .05em;
   color: $color-text-base;
@@ -190,6 +189,26 @@ img {
         }
     }
 }
+.util-link {
+    display: inline-block;
+    border-radius: 50px;
+    width: 200px;
+    height: 60px;
+    line-height: 60px;
+    color: #fff;
+    font-size: 1.4rem;
+    font-weight: 700;
+    background: linear-gradient(to right, rgba(0,0,139,1), rgba(65,105,225,1));
+    text-align: center;
+    transition: opacity .3s;
+
+    &:hover {
+        cursor: pointer;
+        opacity: .7;
+        transition: opacity .3s;
+    }
+}
+
 
 /* pankuzu
 -------------------------------------------------------------*/
@@ -2095,4 +2114,22 @@ select {
 }
 input[type="tel"] {
     max-width: 200px;
+}
+
+.contact-footer-submit {
+    margin-top: 46px;
+
+    @include mq(sm) {
+        margin-top: 24px;
+    }
+}
+
+.contact-message {
+    text-align: center;
+    margin-top: 60px;
+    display: none;
+
+    &.-error {
+        color: #f00;
+    }
 }

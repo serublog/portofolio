@@ -33,8 +33,7 @@ html {
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lora', 'Yu Mincho', sans-serif;
   font-size: 1.5rem;
   letter-spacing: .05em;
   color: #333;
@@ -167,6 +166,29 @@ img {
 
 .util-btn a:hover {
   opacity: .7;
+}
+
+.util-link {
+  display: inline-block;
+  border-radius: 50px;
+  width: 200px;
+  height: 60px;
+  line-height: 60px;
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 700;
+  background: -webkit-gradient(linear, left top, right top, from(darkblue), to(royalblue));
+  background: linear-gradient(to right, darkblue, royalblue);
+  text-align: center;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+.util-link:hover {
+  cursor: pointer;
+  opacity: .7;
+  -webkit-transition: opacity .3s;
+  transition: opacity .3s;
 }
 
 /* pankuzu
@@ -2532,5 +2554,25 @@ select {
 
 input[type="tel"] {
   max-width: 200px;
+}
+
+.contact-footer-submit {
+  margin-top: 46px;
+}
+
+@media screen and (max-width: 768px) {
+  .contact-footer-submit {
+    margin-top: 24px;
+  }
+}
+
+.contact-message {
+  text-align: center;
+  margin-top: 60px;
+  display: none;
+}
+
+.contact-message.-error {
+  color: #f00;
 }
 /*# sourceMappingURL=style.css.map */

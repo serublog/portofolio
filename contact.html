@@ -10,7 +10,7 @@
   <!-- fontawesome	 -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
   <!-- icon -->
-  <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
   <!-- reset css	 -->
   <link rel="stylesheet" href="./css/reset.css">
   <!-- 	google font -->
@@ -25,27 +25,27 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__inner inner">
-            <h1 class="site-title"><a href="./"><img src="./img/logo.svg" alt=""></a></h1>
-            <nav class="header__nav">
-                <ul class="header__list">
-                    <li class="header__item"><a href="./service.html" class="header__item__link">サービス</a></li>
-                    <li class="header__item"><a href="./works.html" class="header__item__link">制作実績</a></li>
-                    <li class="header__item"><a href="./company.html" class="header__item__link">私について</a></li>
-                    <li class="header__item"><a href="./price.html" class="header__item__link">料金</a></li>
-                    <li class="header__item"><a href="./contact.html" class="header__item__link">お問い合わせ・ご相談</a></li>
-                </ul>
-            </nav>
-            <div class="burger-btn">
-                <span class="bar bar__top"></span>
-                <span class="bar bar__mid"></span>
-                <span class="bar bar__bottom"></span>
-            </div>
-        </div>
-        <div class="mask"></div>
-    </header>
-    <!-- /.header -->
+  <header class="header">
+    <div class="header__inner inner">
+      <h1 class="site-title"><a href="./"><img src="./img/logo-white.png" alt=""></a></h1>
+      <nav class="header__nav">
+        <ul class="header__list">
+          <li class="header__item"><a href="./service.html" class="header__item__link">サービス</a></li>
+          <li class="header__item"><a href="./works.html" class="header__item__link">制作実績</a></li>
+          <li class="header__item"><a href="./company.html" class="header__item__link">私について</a></li>
+          <li class="header__item"><a href="./price.html" class="header__item__link">料金</a></li>
+          <li class="header__item"><a href="./contact.html" class="header__item__link">お問い合わせ・ご相談</a></li>
+        </ul>
+      </nav>
+      <div class="burger-btn">
+        <span class="bar bar__top"></span>
+        <span class="bar bar__mid"></span>
+        <span class="bar bar__bottom"></span>
+      </div>
+    </div>
+    <div class="mask"></div>
+  </header>
+  <!-- /.header -->
 
   <main class="main">
     <div class="mainvisual">
@@ -67,7 +67,8 @@
       <div class="contact__contact__inner inner">
         <p class="contact__contact__lead">Webサイトの制作のご依頼やお見積りなど、<br class="hidden-md"> お気軽にご相談ください。</p>
         <div class="contact__contact__wrapper">
-          <form id="js-form" action="" class="contact__contact__form" method="post">
+          
+          <form id="js-form" action="https://docs.google.com/forms/u/5/d/e/1FAIpQLSdQWUkhPQFHXFd3cUwdarOXbX7Pelgqfq505v7Ay904I2BpcA/formResponse" class="contact__contact__form" method="POST">
             <dl class="contact__contact__list">
               <div class="contact__contact__item">
                 <dt class="contact__contact__item-title">
@@ -76,7 +77,8 @@
                 <dd class="contact__contact__item-input">
                   <div class="contact__contact__radio-wrap">
                     <label class="contact__contact__radio">
-                      <input type="radio" name="radio" class="contact__contact__radio-input" value="お仕事のご依頼・ご相談" required checked>
+                      <input type="radio" name="radio" class="contact__contact__radio-input" value="お仕事のご依頼・ご相談"
+                        required checked>
                       <span class="contact__contact__radio-part">お仕事のご依頼・ご相談</span>
                     </label>
                     <label class="contact__contact__radio">
@@ -95,13 +97,13 @@
                   お名前<span class="contact__contact__item-title-inline">*必須</span>
                 </dt>
                 <dd class="contact__contact__item-input">
-                  <input type="text" name="" required>
+                  <input type="text" name="entry.1979780290" required>
                 </dd>
               </div>
               <div class="contact__contact__item">
                 <dt class="contact__contact__item-title">会社名</dt>
                 <dd class="contact__contact__item-input">
-                  <input type="text" name="" required>
+                  <input type="text" name="entry.1401420564" required>
                 </dd>
               </div>
               <div class="contact__contact__item">
@@ -109,7 +111,7 @@
                   メールアドレス<span class="contact__contact__item-title-inline">*必須</span>
                 </dt>
                 <dd class="contact__contact__item-input">
-                  <input type="email" name="" required>
+                  <input type="email" name="entry.1157851180" required>
                 </dd>
               </div>
               <div class="contact__contact__item">
@@ -117,7 +119,7 @@
                   お電話番号
                 </dt>
                 <dd class="contact__contact__item-input">
-                  <input type="tel" name="" required>
+                  <input type="tel" name="entry.220989059" required>
                 </dd>
               </div>
               <div class="contact__contact__item">
@@ -125,17 +127,25 @@
                   お問い合わせ内容<span class="contact__contact__item-title-inline">*必須</span>
                 </dt>
                 <dd class="contact__contact__item-input">
-                  <textarea name="" required></textarea>
+                  <textarea name="entry.1390135054" required></textarea>
                 </dd>
               </div>
             </dl>
+            <div class="contact-footer-submit util-btn btn">
+              <button id="js-submit" class="util-link -submit" type="submit" disabled>送信する</button>
+            </div>
           </form>
-          <div class="util-btn btn"><a href="#!">送信する</a></div>
+          <div id="js-success" class="contact-message">
+            <p>送信完了しました。ありがとうございました。</p>
+          </div>
+          <div id="js-error" class="contact-message -error">
+            <p>送信に失敗しました。ページを更新して再度送信してください。</p>
+          </div>
         </div>
       </div>
     </section>
     <!-- /.contact -->
-
+    
     <a class="totop"><i class="fas fa-arrow-up"></i></a>
   </main>
   <!-- /.main -->
@@ -147,11 +157,10 @@
           <li class="footer__item"><a href="./service.html" class="footer__item__link">サービス</a></li>
           <li class="footer__item"><a href="./works.html" class="footer__item__link">制作実績</a></li>
           <li class="footer__item"><a href="./company.html" class="footer__item__link">私について</a></li>
-          <!-- <li class="footer__item"><a href="./recruit.html" class="footer__item__link">RECRUIT</a></li> -->
           <li class="footer__item"><a href="./contact.html" class="footer__item__link">お問い合わせ・ご相談</a></li>
         </ul>
       </nav>
-      <p class="copyright">&copy; PON DESIGN</p>
+      <p class="copyright">&copy; SERU DESIGN</p>
     </div>
   </footer>
   <!-- /.footer -->
